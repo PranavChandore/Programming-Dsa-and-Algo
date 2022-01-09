@@ -1,5 +1,5 @@
 //Calculating sum of first three element ?
-
+//
 #include<iostream>
 using namespace std;
 

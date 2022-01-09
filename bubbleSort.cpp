@@ -8,7 +8,7 @@
 /* Main thing is rember here pranav 
     Here we go to the n- ith iteration for sorting an array
 
-        i<n= n-i;
+        i<n= n-i;//
 
         for the less than size one iteration we use Counter counter is set t o counter <n
 

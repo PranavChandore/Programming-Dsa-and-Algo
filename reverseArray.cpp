@@ -10,7 +10,7 @@ void reverseArray(int arr[], int i,int j){
         arr[j]= temp;
         i++;
         j--;
-        /* code */
+    
     }
     
 }

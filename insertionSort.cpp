@@ -15,14 +15,35 @@ using namespace std;
 void insertionSort(int arr[],int n){
 
     for(int i=1;i<n;i++){
-        int arr[j] = i-1;
-        int current = arr[j];
+        int j = i-1;
+        int current = arr[i];
 
-        while (arr[j]
+        while (arr[j]> current && j>=0)
         {
-            /* code */
+            
+            arr[j+1]= arr[j];
+            j--;
         }
         
+        arr[j+1] = current;
+    }
+}
+  
+  
+    void printArray(int arr[],int n){
+        for(int i=0;i<n;i++){
+            cout<<arr[i]<<" ";
+        }
     }
 
-}
+    int main(){
+
+        int arr[]= {12, 45, 23, 51, 19, 8};
+        int n= sizeof(arr)/sizeof(arr[0]);
+
+        insertionSort(arr, n);
+        printArray(arr,n);
+
+        return 0;
+    }
+    

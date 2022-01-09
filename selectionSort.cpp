@@ -1,6 +1,6 @@
 //Selection sort 
 /* in selection sort we find min element at set it to at begening
-here one thing remember i=0;i<n-1;
+here one thing remember i=0;i<n-1;//
 and int j=i+1 ;j<n;
  */
 

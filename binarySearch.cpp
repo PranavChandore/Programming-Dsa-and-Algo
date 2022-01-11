@@ -20,8 +20,8 @@ int binarySearch(int arr[], int n, int key){
         }else{
             s=mid+1;
         }
-    }}
-
+    }
+}
 
     void printArray(int arr[],int n){
         for(int i=0;i<n;i++){

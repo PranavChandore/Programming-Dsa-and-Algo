@@ -1,4 +1,6 @@
 #include<iostream>
+#include<string>
+#include<algorithm>
 using namespace std;
 /*
 int main(){
@@ -65,24 +67,33 @@ int main(){
     int i=0;
     int curr_length=0;
     int max_length =0;
+    int st=0, max_st=0;
     while(1){
     for(int i=0;i<n-1;i++){
 
-        if(arr[i] == " " || arr[i] = '\0'){   /*here if space is occured also '\0' occured then also chek fruther*/
+        if(arr[i] == ' ' || arr[i] = '\0'){   /*here if space is occured also '\0' occured then also chek fruther*/
             if(curr_length > max_length){
                 max_length= curr_length;
+                max_st = st;
             }
-            curr_length=0; /*// for next word current length must be zero to calculate length*/
+             /*// for next word current length must be zero to calculate length*/
+            curr_length=0;
+            st = i+1;
         }
+        else
         curr_length ++;
-    }
+    
 
     if (arr[i] = '\0')
         break;
 
         i++;
     }
+
+    }
     cout<<max_length;
+    for(int i=0;i<max_length;i++)
+        cout<<arr[i+max_st];
 
     return 0;
 }

@@ -2,7 +2,7 @@
 //in bianry sort we creating mid element and compare with key element 
 //if key is less than mid then update s=mid+1;
 //else if e=mid+1;
-//
+////
 #include<iostream>
 using namespace std;
 
